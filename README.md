@@ -122,6 +122,8 @@ teldrive run --tg-app-id="" --tg-app-hash="" --jwt-secret="" --db-data-source=""
 ```
 Read [more](https://github.com/tgdrive/teldrive/wiki/Teldrive-setup-with-Rclone-Volume-Driver) how to setup teldrive with rclone volume driver.
 
+Follow [this](https://github.com/tgdrive/player-protocol) to open file links directly in VLC and PotPlayer.
+
 ## Important
   - Default Channel can be selected through UI. Make sure to set it from account settings on first login.
   - Multi Bots Mode is recommended to avoid flood errors and enable maximum download speed, especially if you are using downloaders like IDM and aria2c, which use multiple connections for downloads.
@@ -179,7 +181,7 @@ api_host = http://localhost:8080 # default host
 access_token = #session token obtained from cookies
 chunk_size = 500M
 upload_concurrency = 4
-encrypt_files = false # Enable this to encrypt files make sure ENCRYPTION_KEY env variable is not empty in teldrive instance.
+encrypt_files = false # Enable this to encrypt files make sure encryption key is not empty in teldrive config file.
 random_chunk_name= true # Use random chunk names when uploading files to channel instead of original filename.
 ```
 **See all options in rclone config command**
